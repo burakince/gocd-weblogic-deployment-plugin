@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<go-plugin id="net.burakince.weblogicDeploymentPlugin" version="1">
+    <about>
+        <name>Weblogic Deployment Plugin</name>
+        <version>1.0.0</version>
+        <target-go-version>17.7</target-go-version>
+        <description>Some description goes here</description>
+        <vendor>
+            <name>Burak ince</name>
+            <url>www.burakince.net</url>
+        </vendor>
+        <target-os>
+            <value>Linux</value>
+            <value>Windows</value>
+        </target-os>
+    </about>
+</go-plugin>
