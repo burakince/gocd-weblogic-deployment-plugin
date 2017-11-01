@@ -9,6 +9,13 @@ import java.util.Map;
 
 public abstract class AbstractCommand {
 
+    public static final String URL_PROPERTY = "Url";
+    public static final String ADDITIONAL_OPTIONS = "AdditionalOptions";
+    public static final String SECURE_CONNECTION = "yes";
+    public static final String SECURE_CONNECTION_PROPERTY = "SecureConnection";
+    public static final String REQUEST_TYPE = "-G";
+    public static final String REQUEST_PROPERTY = "RequestType";
+
     public abstract GoPluginApiResponse execute(GoPluginApiRequest request);
 
     protected GoPluginApiResponse prepareResponse(int responseCode, Map body) {

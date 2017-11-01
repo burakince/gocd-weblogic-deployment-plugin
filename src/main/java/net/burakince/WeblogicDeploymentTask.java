@@ -1,7 +1,6 @@
 package net.burakince;
 
-import com.thoughtworks.go.plugin.api.GoApplicationAccessor;
-import com.thoughtworks.go.plugin.api.GoPlugin;
+import com.thoughtworks.go.plugin.api.AbstractGoPlugin;
 import com.thoughtworks.go.plugin.api.GoPluginIdentifier;
 import com.thoughtworks.go.plugin.api.annotation.Extension;
 import com.thoughtworks.go.plugin.api.exceptions.UnhandledRequestTypeException;
@@ -12,18 +11,12 @@ import com.thoughtworks.go.plugin.api.response.GoPluginApiResponse;
 import java.util.Arrays;
 
 @Extension
-public class WeblogicDeploymentTask implements GoPlugin {
+public class WeblogicDeploymentTask extends AbstractGoPlugin {
 
     private final Logger logger = Logger.getLoggerFor(WeblogicDeploymentTask.class);
 
     @Override
-    public void initializeGoApplicationAccessor(GoApplicationAccessor goApplicationAccessor) {
-
-    }
-
-    @Override
     public GoPluginApiResponse handle(GoPluginApiRequest requestMessage) throws UnhandledRequestTypeException {
-        new ProcessBuilder("echo \"Hello World\"");
         return null;
     }
 
