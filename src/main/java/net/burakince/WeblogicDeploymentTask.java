@@ -14,10 +14,11 @@ import java.util.Arrays;
 public class WeblogicDeploymentTask extends AbstractGoPlugin {
 
     private final Logger logger = Logger.getLoggerFor(WeblogicDeploymentTask.class);
+    private final CommandFactory commandFactory = new CommandFactory();
 
     @Override
     public GoPluginApiResponse handle(GoPluginApiRequest requestMessage) throws UnhandledRequestTypeException {
-        return null;
+        return commandFactory.getCommand(requestMessage.requestName()).execute(requestMessage);
     }
 
     @Override
