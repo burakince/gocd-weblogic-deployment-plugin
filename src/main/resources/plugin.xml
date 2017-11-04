@@ -3,15 +3,14 @@
     <about>
         <name>Weblogic Deployment Plugin</name>
         <version>1.0.0</version>
-        <target-go-version>17.7</target-go-version>
-        <description>Some description goes here</description>
+        <target-go-version>17.7.0</target-go-version>
+        <description>Web Application Deployer for Weblogic Servers</description>
         <vendor>
-            <name>Burak ince</name>
+            <name>Burak İnce</name>
             <url>www.burakince.net</url>
         </vendor>
         <target-os>
-            <value>Linux</value>
-            <value>Windows</value>
+            <value>No restrictions</value>
         </target-os>
     </about>
 </go-plugin>
